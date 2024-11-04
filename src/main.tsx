@@ -14,13 +14,13 @@ import DocumentationView from "./views/DocumentationView";
 const PageIndex = () => {
   return (
     <div>
-      <h1>Assignment</h1>
-      <ul>
+      <h1 className="main-heading">Assignment 01</h1>
+      <ul className="link-list">
         <li>
-          <Link to="/">Timers</Link>
+          <Link to="/" className="nav-link">Timers</Link>
         </li>
         <li>
-          <Link to="/docs">Documentation</Link>
+          <Link to="/docs" className="nav-link">Documentation</Link>
         </li>
       </ul>
       <Outlet />

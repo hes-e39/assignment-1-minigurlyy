@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -5,6 +11,11 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #d6cdba;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 code {
@@ -17,4 +28,85 @@ th {
   border: 1px solid #dddddd;
   text-align: left;
   padding: 8px;
+}
+
+.main-heading {
+  font-size: 2.5rem;
+  color: #260801;
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.link-list {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.nav-link {
+  font-size: 1rem;
+  color: #D98F4E;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+.timer-title {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.timer-time {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #2C4001;
+  margin: 10px 0;
+}
+
+.timer-round {
+  font-size: 1.2rem;
+  color: #888888;
+  margin-bottom: 10px;
+}
+
+.timer-button {
+  font-size: 1rem;
+  padding: 8px 15px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.start-button {
+  background-color: #D9420B;
+  color: #fff;
+}
+
+.pause-button {
+  background-color: #D98F4E;
+  color: #fff;
+}
+
+.reset-button {
+  background-color: #730202;
+  color: #fff;
+}
+
+.fast-forward-button {
+  background-color: #2C4001;
+  color: #fff;
+}
+
+.timer-button:hover {
+  opacity: 0.8;
 }
